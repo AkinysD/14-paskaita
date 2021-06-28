@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 paskaita</title>
+    <style>
+        body {
+            max-width: 1920px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+     <h1>JavaScript pirma paskaita</h1>
+        <p>Sia paskaita pradesime JavaScript pradmenis.</p>
+        <p class="keiciamas-turinys">Čia keičiasi turinys</p>
+        
+        <script>
+            "use strict";
+            //
+            //pasirinkimo elementą
+            // document.querySelector(".keiciamas-turinys").innerHTML = "Sekmingai pakeičiau p elemento tekstą";
+            // console.log(document.querySelector(".keiciamas-turinys").innerHTML);
+
+            // document.querySelector(".keiciamas-turinys").innerHTML = "Antrą kartą pakeistas tekstas";
+            // console.log(document.querySelector(".keiciamas-turinys").innerHTML);
+
+            //pasirinktą elementą išvedame į console
+            // console.log(document.querySelector(".keiciamas-turinys").innerHTML);
+
+            //1. Priskyrimas - mes pasirenkame kažkokį elementą iš turinio
+            //2. Atliekami pakeitimai
+            //3. Yra atvaizduojami - console.log; bei tiesiai į dizainą
+
+            //Kintamieji
+            //Kintamasis - išskirta vieta kompiuterio atmintyje, kurioje mes saugome informaciją
+
+
+            //var .,kintamasis ; kintamasis negali prasideti kableliu tasku bruskneliu ir t.t.
+            // var 1kintamasis; negali prasideti skaiciumi
+
+            var kintamasis1; //kintamojo deklaravimas
+            kintamasis1 = 8; //kintamojo priskyrimas
+            console.log(kintamasis1); //kintamojo isvedimas
+
+
+            var kintamasis2; //kintamojo deklaravimas
+            kintamasis2 = "Kintamasis saugo teksta"; //string
+            console.log(kintamasis2); //kintamojo isvedimas
+            
+            var kintamasis3;
+            kintamasis3 = 'Kintamasis saugo teksta'; //string
+            console.log(kintamasis3);
+
+            var kintamasis4 = "Knyga 'Altorių šešėlyje'"; //kabutes naudojame pagal poreikį tekste
+            var kintamasis5 = 'Knyga "Altorių šešėlyje"';
+
+            console.log(kintamasis4);
+            console.log(kintamasis5);
+
+            var kintamasis6;
+            kintamasis6 = 5.5;
+
+            console.log(kintamasis6);
+
+            //Tiesa, melas - boolean
+
+            var tiesa;
+            tiesa = true;
+            var melas;
+            melas = false;
+            
+            console.log(tiesa);
+            console.log(melas);
+
+
+
+
+            var testinis; //kintamojo deklaravimas
+            testinis = 8; //kintamojo priskyrimas
+            console.log(testinis); //kintamojo ivedimas
+
+            //Isvesti dvieju skaitmenu suma
+            //2 kintamieji - a,b. Suma reikia isvesti - suma. console.log
+
+            var a,b,suma ; // a kintamasis, b kintamasis
+            a = 10;
+            b = 7;
+            a = 0;
+            suma = a + b; //17
+            console.log("Dvieju skaitmenu suma");
+            console.log(suma);
+
+            var skirtumas, sk1, sk2;
+            sk1 = 15;
+            sk2 = 5;
+            skirtumas = sk1 - sk2;
+            console.log("Dvieju skaitmenu skirumas");
+            console.log(skirtumas);
+
+            // Dauginti
+            var daugyba;
+            daugyba = sk1 * sk2;
+            console.log("Dvieju skaitmenu daugybos rez");
+            console.log(daugyba);
+
+            // Dalyba
+            var dalybosRezultatas;
+            sk1 = 16;
+            sk2 = 5;
+            dalybosRezultatas = parseInt(sk1 / sk2);
+            console.log("Dvieju skaitmenu dalybos rezultatas");
+            console.log(dalybosRezultatas); // 16/5 = 3.2; PHP - 16/5 = 3
+
+            //Dalyba(liekanos gavimas)
+
+            var liekana;
+            liekana = sk1 % sk2;
+            console.log("Dvieju skaitmenu dalybos liekana")
+            console.log(liekana);
+        </script>
+</body>
+</html>
